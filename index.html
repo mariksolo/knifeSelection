@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
 
@@ -42,85 +43,87 @@ path {
 	margin: 0;
 }
 
+.africa {
+	background: #eee;
+	text-align: center;
+}
+
+.africa svg {
+	/*max-width: */
+}
+
 </style>
 </head>
 <body>
 <div class="container">
 	<div class="row">
 
-	<div id ="selector" class="container-fluid col-md-5">
-		<div id="accordion">
-		  <div class="card">
-			<div class="card-header" id="headingOne">
-			  <h5 class="mb-0">
-				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				  Paint Brush Colors
-				</button>
-			  </h5>
+		<div id ="selector" class="container-fluid col-md-5">
+			<div id="accordion">
+			  <div class="card">
+					<div class="card-header" id="headingOne">
+					  <h5 class="mb-0">
+						<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  Paint Brush Colors
+						</button>
+					  </h5>
+					</div>
+
+					<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					  <div class="card-body">
+					  	<form id="paintBrush">
+					  		
+								<div class="radio">
+									<label><input type="radio" name="optradio" id="red" checked>Red</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio" id="green">Green</label>
+								</div>
+								<div class="radio">
+									<label><input type="radio" name="optradio" id="blue">Blue</label>
+								</div>
+							</form>
+					  </div>
+					</div>
+			  </div>
+			  <div class="card">
+					<div class="card-header" id="headingTwo">
+					  <h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						  Collapsible Group Item #2
+						</button>
+					  </h5>
+					</div>
+					<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					  <div class="card-body">
+						  <form id="myform">
+						    <input type="checkbox" name="check1" value="check1">
+						    <input type="checkbox" name="check2" value="check2">
+						  </form>
+					  </div>
+					</div>
+			  </div>
+			  <div class="card">
+					<div class="card-header" id="headingThree">
+					  <h5 class="mb-0">
+							<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							  Collapsible Group Item #3
+							</button>
+					  </h5>
+					</div>
+					<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					  <div class="card-body">
+						 Anim pariatur cliche reprehenderit, enim eiusmod high life accue ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+			  </div>
+					
 			</div>
 
-			<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-			  <div class="card-body">
-			  	<form id="paintBrush">
-			  		
-					<div class="radio">
-						<label><input type="radio" name="optradio" id="red" checked>Red</label>
-					</div>
-					<div class="radio">
-						<label><input type="radio" name="optradio" id="green">Green</label>
-					</div>
-					<div class="radio">
-						<label><input type="radio" name="optradio" id="blue">Blue</label>
-					</div>
-				</form>
-			  </div>
-			</div>
-		  </div>
-		  <div class="card">
-			<div class="card-header" id="headingTwo">
-			  <h5 class="mb-0">
-				<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				  Collapsible Group Item #2
-				</button>
-			  </h5>
-			</div>
-			<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-			  <div class="card-body">
-				 <form id="myform">
-				   <input type="checkbox" name="check1" value="check1">
-				   <input type="checkbox" name="check2" value="check2">
-				 </form>
-			  
-			   </div>
-			</div>
-		  </div>
-		  <div class="card">
-			<div class="card-header" id="headingThree">
-			  <h5 class="mb-0">
-				<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				  Collapsible Group Item #3
-				</button>
-			  </h5>
-			</div>
-			<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-			  <div class="card-body">
-				 Anim pariatur cliche reprehenderit, enim eiusmod high life accue ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-			  </div>
-			</div>
-			</div>
-		
-		
-		
-		
 		</div>
 
-
-
-
-	</div>
-
 		<div id="display" class="col-md-6 container">
-			<div id="svg_file" class="jumbotron"></div>
+			<div id="svg_file" class="africa"></div>
 			<button type="button" class="btn btn-secondary" id="reset">Reset</button>
 		</div>
 		
@@ -135,13 +138,8 @@ path {
 				</thead>
 				
 				<tbody id="tBody">
-					<!-- <tr id="pBrush">
-						<td id="pBrushComp">Paint Brush</td>
-						<td id="pBrushFin">asdf</td>
-						<td id="pBrushPrice">$3.00</td>
-					<tr> -->
-				</tbody>
 					
+				</tbody>
 			</table>
 		</div>
 	</div> <!-- .row -->
@@ -152,6 +150,9 @@ path {
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
 <script>
 $(document).ready(function () {
 	// Some dont support sttuff...  Uncomment if it works.  Otherwise paste svg into #svg_file
@@ -213,7 +214,5 @@ $(document).ready(function () {
 	}
 });
 </script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
